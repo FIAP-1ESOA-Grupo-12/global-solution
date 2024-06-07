@@ -9,12 +9,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="../src/output.css" rel="stylesheet">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero-bg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?ocean');
+      background-size: cover;
+      background-position: center;
+    }
+    html, body {
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
   <header class="bg-gray-800/50 backdrop-blur fixed w-full z-10">
     <div class="container mx-auto px-6 py-4 flex md:justify-between items-center justify-center">
-      <a href="#"><img src="./images/icons/Logo.svg" alt="logo"></a>
+      <a href="#"><img src="./public/images/icons/Logo.svg" alt="logo"></a>
       <nav class="hidden md:flex space-x-4">
         <a href="#problema" class="text-gray-300 hover:text-blue-400 transition">Problema</a>
         <a href="#solucao" class="text-gray-300 hover:text-blue-400 transition">Solução</a>
@@ -36,21 +50,21 @@
       <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
         <div class="bg-gray-900 p-6 rounded-lg shadow-md">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white mb-4">
-            <img src="./images/icons/no-water.svg" alt="no-water" class="w-8">
+            <img src="./public/images/icons/no-water.svg" alt="no-water" class="w-8">
           </div>
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Escassez de Água</h3>
           <p class="text-gray-300">Muitas regiões do Brasil enfrentam escassez crítica de água potável, especialmente no semiárido nordestino e em áreas urbanas densamente povoadas.</p>
         </div>
         <div class="bg-gray-900 p-6 rounded-lg shadow-md">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white mb-4">
-            <img src="./images/icons/energy.svg" alt="energy-dependency" class="w-4">
+            <img src="./public/images/icons/energy.svg" alt="energy-dependency" class="w-4">
           </div>
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Dependência de Energia</h3>
           <p class="text-gray-300">A dependência de fontes de energia não renováveis agrava a situação, contribuindo para a poluição ambiental e mudanças climáticas.</p>
         </div>
         <div class="bg-gray-900 p-6 rounded-lg shadow-md">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white mb-4">
-            <img src="./images/icons/earth.svg" alt="environment" class="w-8">
+            <img src="./public/images/icons/earth.svg" alt="environment" class="w-8">
           </div>
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Impacto Ambiental</h3>
           <p class="text-gray-300">A falta de água e a utilização de energia não renovável impactam negativamente o meio ambiente, resultando em perda de biodiversidade e outros problemas ecológicos.</p>
@@ -64,21 +78,21 @@
       <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
         <div class="bg-gray-900 p-6 rounded-lg shadow-md">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-600 text-white mb-4">
-            <img src="./images/icons/noun-technology.svg" alt="technology" class="w-9">
+            <img src="./public/images/icons/noun-technology.svg" alt="technology" class="w-9">
           </div>
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Tecnologia Avançada</h3>
           <p class="text-gray-300">Utilizamos tecnologias avançadas para dessalinização, garantindo eficiência e sustentabilidade no processo de obtenção de água potável.</p>
         </div>
         <div class="bg-gray-900 p-6 rounded-lg shadow-md">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-600 text-white mb-4">
-            <img src="./images/icons/renewable-energy.svg" alt="renewable-energy" class="w-8">
+            <img src="./public/images/icons/renewable-energy.svg" alt="renewable-energy" class="w-8">
           </div>
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Energia Renovável</h3>
           <p class="text-gray-300">Integramos sistemas de energia renovável para alimentar o processo de dessalinização, reduzindo a pegada de carbono e promovendo a sustentabilidade.</p>
         </div>
         <div class="bg-gray-900 p-6 rounded-lg shadow-md">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-600 text-white mb-4">
-            <img src="./images/icons/innovation-research.svg" alt="innovation-research" class="w-8">
+            <img src="./public/images/icons/innovation-research.svg" alt="innovation-research" class="w-8">
           </div>
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Inovação e Pesquisa</h3>
           <p class="text-gray-300">Estamos constantemente inovando e pesquisando novas formas de melhorar nossos processos, garantindo eficiência e sustentabilidade.</p>
@@ -92,21 +106,21 @@
       <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
         <div class="bg-gray-900 p-6 rounded-lg shadow-md">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-purple-600 text-white mb-4">
-            <img src="./images/icons/government.svg" alt="government" class="w-7">
+            <img src="./public/images/icons/government.svg" alt="government" class="w-7">
           </div>
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Governos Locais</h3>
           <p class="text-gray-300">Trabalhamos com governos locais para implementar soluções de dessalinização e geração de energia renovável em áreas carentes.</p>
         </div>
         <div class="bg-gray-900 p-6 rounded-lg shadow-md">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-purple-600 text-white mb-4">
-            <img src="./images/icons/business.svg" alt="business" class="w-7">
+            <img src="./public/images/icons/business.svg" alt="business" class="w-7">
           </div>
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Empresas</h3>
           <p class="text-gray-300">Oferecemos soluções para empresas que buscam reduzir seu impacto ambiental e garantir um fornecimento sustentável de água e energia.</p>
         </div>
         <div class="bg-gray-900 p-6 rounded-lg shadow-md">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-purple-600 text-white mb-4">
-            <img src="./images/icons/community.svg" alt="community" class="w-8">
+            <img src="./public/images/icons/community.svg" alt="community" class="w-8">
           </div>
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Comunidades</h3>
           <p class="text-gray-300">Ajudamos comunidades a obter acesso a água potável e energia renovável, melhorando a qualidade de vida e promovendo a sustentabilidade.</p>
@@ -119,37 +133,37 @@
       <h2 class="text-4xl font-bold text-center text-gray-100" data-aos="fade-left">Nossa Equipe</h2>
       <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
         <div class="bg-gray-900 p-6 rounded-lg shadow-md text-center">
-          <img src="./images/aramis.png" alt="Foto de Aramis Gaxiola" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <img src="./public/images/aramis.png" alt="Foto de Aramis Gaxiola" class="w-24 h-24 rounded-full mx-auto mb-4">
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Aramis Gaxiola</h3>
           
           <div class="container flex justify-center items-center gap-4">
             <p class="text-gray-300">RM 555397</p>
-            <a href="https://github.com/ismaelAramis" target="_blank"><img src="./images/icons/logo-github.svg" alt="" class="w-8"></a>
+            <a href="https://github.com/ismaelAramis" target="_blank"><img src="./public/images/icons/logo-github.svg" alt="" class="w-8"></a>
           </div>
         </div>
         <div class="bg-gray-900 p-6 rounded-lg shadow-md text-center">
-          <img src="./images/kevin.jpg" alt="Foto de Kevin Benevides" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <img src="./public/images/kevin.jpg" alt="Foto de Kevin Benevides" class="w-24 h-24 rounded-full mx-auto mb-4">
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Kevin Benevides</h3>
           <div class="container flex justify-center items-center gap-4">
             <p class="text-gray-300">RM 557898</p>
-            <a href="https://github.com/kevinbsr" target="_blank"><img src="./images/icons/logo-github.svg" alt="" class="w-8"></a>
+            <a href="https://github.com/kevinbsr" target="_blank"><img src="./public/images/icons/logo-github.svg" alt="" class="w-8"></a>
           </div>
         </div>
         <div class="bg-gray-900 p-6 rounded-lg shadow-md text-center">
-          <img src="./images/james.png" alt="Foto de Jameson Sales" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <img src="./public/images/james.png" alt="Foto de Jameson Sales" class="w-24 h-24 rounded-full mx-auto mb-4">
           <h3 class="text-xl font-semibold text-gray-100 mb-2">Jameson Sales</h3>
           <div class="container flex justify-center items-center gap-4">
             <p class="text-gray-300">RM 557985</p>
-            <a href="https://github.com/tsales18" target="_blank"><img src="./images/icons/logo-github.svg" alt="" class="w-8"></a>
+            <a href="https://github.com/tsales18" target="_blank"><img src="./public/images/icons/logo-github.svg" alt="" class="w-8"></a>
           </div>
         </div>
       </div>
     </div>
   </section>
   <footer class="py-8 bg-gray-800">
-    <div class="container flex items-center justify-between mx-auto px-6 text-gray-300">
-      <p>&copy; 2024 OceanCare. Todos os direitos reservados.</p>
-      <img src="images/icons/Logo.svg" alt="logo">
+    <div class="container flex flex-col md:flex-row items-center justify-between mx-auto px-6 text-gray-300">
+      <p class="text-center mb-4">&copy; 2024 OceanCare. Todos os direitos reservados.</p>
+      <img src="./public/images/icons/Logo.svg" alt="logo">
     </div>
   </footer>
 

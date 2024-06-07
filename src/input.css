@@ -9,9 +9,3 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
 }
-
-.hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?ocean');
-  background-size: cover;
-  background-position: center;
-}
